@@ -1,7 +1,11 @@
 {
     "name": "hyphenation.{language}",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "keywords": ["hypher", "hyphenation", "pattern", "language", "ender", "{language}"],
     "author": "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)",
-    "main": "./lib/{language}.js"
+    "main": "./lib/{language}.js",
+    "ender": "./lib/ender.js",
+    "dependencies": {
+        "hypher": "*"
+    }
 }
