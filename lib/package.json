@@ -1,6 +1,7 @@
 {
     "name": "hyphenation.{language}",
-    "version": "0.1.2",
+    "description": "Hyphenation language pattern file ({language}) for Hypher, the fast and small hyphenation engine", 
+    "version": "0.1.4",
     "keywords": ["hypher", "hyphenation", "pattern", "language", "ender", "{language}"],
     "author": "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)",
     "main": "./lib/{language}.js",
