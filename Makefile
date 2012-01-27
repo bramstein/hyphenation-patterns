@@ -1,21 +1,19 @@
-.PHONY : all clean
+.PHONY : all clean publish
 
 patterns := $(wildcard patterns/*.js)
-browser := $(wildcard patterns/*.js)
-publish := en-us nl
 
-all: $(patterns) $(browser)
+all: $(patterns)
 
 $(patterns):: lib/package.json 
 	@mkdir -p dist/npm/$(basename $(@F))/lib
 	sed 's/{language}/$(basename $(@F))/g' lib/ender.js > dist/npm/$(basename $(@F))/lib/ender.js
 	cat $@ > dist/npm/$(basename $(@F))/lib/$(@F) 
-	sed 's/{language}/$(basename $(@F))/g' lib/package.json > dist/npm/$(basename $(@F))/package.json 
+	sed 's/{language}/$(basename $(@F))/g' lib/package.json > dist/npm/$(basename $(@F))/package.json
 
-$(publish):
-	(cd dist/npm/$@; npm publish)
+publish:
+	for language in `ls dist/npm/` ; do (cd dist/npm/$$language; npm publish) ; done
 
-$(browser):: lib/patterns.browser.pre.js lib/patterns.browser.post.js
+$(patterns):: lib/patterns.browser.pre.js lib/patterns.browser.post.js
 	@mkdir -p dist/browser/
 	cat lib/patterns.browser.pre.js $@ lib/patterns.browser.post.js > dist/browser/$(@F)
 
