@@ -3,10 +3,10 @@
 // based on LaTeX Latin hyphenation patterns by Claudio Beccari
 // (http://tug.ctan.org/tex-archive/language/hyphenation/lahyph.tex)
 module.exports = {
-	id: 'la',
-	leftmin : 2,
-	rightmin : 2,
-	patterns : {
+	'id': 'la',
+	'leftmin': 2,
+	'rightmin': 2,
+	'patterns': {
 		2 : "æ1œ11b1c1d1f1g1h1j1k1l1m1n1p1r1t1v1x1z",
 		3 : "2bb2bdb2l2bm2bnb2r2bt2bs2b_2ccc2l2cm2cn2cqc2r2cs2ct2cz2c_2dd2dg2dmd2r2ds2dv2d_2fff2l2fnf2r2ft2f_2gg2gd2gfg2l2gmg2ng2r2gs2gv2g_2hp2ht2h_2kk2lb2lc2ld2lf2lg2lk2ll2lm2ln2lp2lq2lr2ls2lt2lv2l_2mm2mb2mp2ml2mn2mq2mr2mv2m_2nb2nc2nd2nf2ng2nl2nm2nn2np2nq2nr2ns2nt2nv2nx2n_p2hp2l2pn2ppp2r2ps2pt2pz2p_2rb2rc2rd2rf2rgr2h2rl2rm2rn2rp2rq2rr2rs2rt2rv2rz2r_1s22s_2tb2tc2td2tf2tgt2ht2lt2r2tm2tn2tp2tq2tt2tv2t_v2lv2r2vv2xt2xx2x_2z_",
 		4 : "a1iaa1iea1ioa1iuae1aae1oae1ue1iuio1io1iao1ieo1ioo1iuuo3uc2h2k2h22php2pht1qu22s3s2stb2stc2std2stf2stg2stm2stn2stp2stq2sts2stt2stv2st_a1uaa1uea1uia1uoa1uue1uae1uee1uie1uoe1uui1uai1uei1uii1uoi1uuo1uao1ueo1uio1uoo1uuu1uau1ueu1uiu1uou1uu",
